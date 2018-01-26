@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <title>Document</title>
+
+
+    <base href="/" />
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="dist/ng1.bundle.js"></script>
+</head>
+
+<body ng-app="app">
+
+    <my-header></my-header>
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+</body>
+
+</html>

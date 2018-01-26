@@ -1,0 +1,24 @@
+{
+  "name": "angular1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "MD M Rahman <mujib517@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-route": "^1.6.8",
+    "bootstrap": "^3.3.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^3.3.1",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}
