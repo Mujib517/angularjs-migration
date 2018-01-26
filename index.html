@@ -13,15 +13,18 @@
     <base href="/" />
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
-    <script src="dist/ng1.bundle.js"></script>
+
 </head>
 
-<body ng-app="app">
-
+<body>
     <my-header></my-header>
     <div class="container">
-        <ng-view></ng-view>
+        <app-root></app-root>
     </div>
+
+
+    <script src="dist/ng1.bundle.js"></script>
+    <script src="dist/ng2.bundle.js"></script>
 </body>
 
 </html>
