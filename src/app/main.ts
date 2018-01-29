@@ -6,6 +6,7 @@ import { UpgradeModule } from '@angular/upgrade/static';
 import { downgradeComponent } from '@angular/upgrade/static';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { UserComponent } from './user/user.component';
 
 declare var angular: any;
 
@@ -15,7 +16,8 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
         angular.module('app')
             .directive('home', downgradeComponent({ component: HomeComponent }))
-            .directive('about', downgradeComponent({ component: AboutComponent }));
+            .directive('about', downgradeComponent({ component: AboutComponent }))
+            .directive('user', downgradeComponent({ component: UserComponent }));
 
         const upgrade = platformRef.injector.get(UpgradeModule) as UpgradeModule;
         upgrade.bootstrap(document.body, ['app']);
